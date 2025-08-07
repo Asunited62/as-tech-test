@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Consultation | A.S. UNITED</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="description" content="Get a free consultation with A.S. UNITED. Discover how our BPO, Customer Acquisition, and Digital Marketing solutions can transform your business." />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-flex">
+      <div class="logo-section">
+        <div class="nav-logo-placeholder">
+          <img src="/Users/shivamwahi/Desktop/as-tech-test/images/AS-TechLogo.png" alt="A.S. UNITED Logo" class="nav-logo-img" />
+        </div>
+        <div class="logo-title">A.S. UNITED</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="offers.html">What We Offer</a></li>
+          <li><a href="consultation.html" class="active">Consultation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-toggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="container hero-content">
+        <div class="hero-logo-placeholder">
+          <img src="/Users/shivamwahi/Desktop/as-tech-test/images/AS-TechLogo.png" alt="A.S. UNITED Logo" class="hero-logo-img" />
+        </div>
+        <h1 class="hero-title">Free Consultation</h1>
+        <p class="hero-tagline">Your Success Starts with a Conversation</p>
+        <p class="hero-desc">
+          Ready to transform your business? Let's discuss your goals and explore how A.S. UNITED can help you achieve extraordinary results.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONSULTATION BENEFITS -->
+    <section class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Book a Consultation?</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-placeholder">
+              <img src="images/strategic-analysis.png" alt="Strategic Analysis" class="feature-icon" />
+            </div>
+            <h4>Strategic Analysis</h4>
+            <p>We'll analyze your current business challenges and identify growth opportunities tailored to your industry.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-placeholder">
+              <img src="images/custom-solutions.png" alt="Custom Solutions" class="feature-icon" />
+            </div>
+            <h4>Custom Solutions</h4>
+            <p>Get personalized recommendations on how our BPO, Customer Acquisition, and Digital Marketing services can benefit you.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-placeholder">
+              <img src="images/Expert-Insight.png" alt="Expert Insights" class="feature-icon" />
+            </div>
+            <h4>Expert Insights</h4>
+            <p>Gain valuable insights from our team of seasoned professionals who understand your market and competition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION BOOKING FORM -->
+    <section class="about-section" style="background: var(--card-bg);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Book Your Free Consultation</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div style="background: var(--background); padding: clamp(2rem, 5vw, 3rem); border-radius: var(--border-radius); box-shadow: var(--shadow);">
+            <!-- Netlify Form -->
+            <form name="consultation" method="POST" netlify netlify-honeypot="bot-field" id="consultationForm" style="display: grid; gap: 1.5rem;">
+              <!-- Hidden fields for Netlify -->
+              <input type="hidden" name="form-name" value="consultation" />
+              <input type="hidden" name="bot-field" />
+              
+              <!-- Personal Information -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label for="firstName" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required 
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                </div>
+                <div>
+                  <label for="lastName" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required 
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                </div>
+              </div>
+
+              <!-- Contact Information -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Email Address *</label>
+                  <input type="email" id="email" name="email" required 
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                </div>
+                <div>
+                  <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required 
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                </div>
+              </div>
+
+              <!-- Company Information -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Company Name *</label>
+                  <input type="text" id="company" name="company" required 
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                </div>
+                <div>
+                  <label for="industry" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Industry</label>
+                  <select id="industry" name="industry" 
+                          style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease; background: white;"
+                          onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                    <option value="">Select Your Industry</option>
+                    <option value="technology">Technology</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="finance">Finance</option>
+                    <option value="retail">Retail/E-commerce</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="real-estate">Real Estate</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Services Interest -->
+              <div>
+                <label style="display: block; margin-bottom: 1rem; font-weight: 600; color: var(--deep-blue);">Which services are you interested in? *</label>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                  <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 1rem; cursor: pointer;">
+                    <input type="checkbox" name="services" value="BPO Solutions" style="width: 1.2rem; height: 1.2rem; accent-color: var(--logo-pink);">
+                    BPO Solutions
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 1rem; cursor: pointer;">
+                    <input type="checkbox" name="services" value="Customer Acquisition" style="width: 1.2rem; height: 1.2rem; accent-color: var(--logo-pink);">
+                    Customer Acquisition
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 1rem; cursor: pointer;">
+                    <input type="checkbox" name="services" value="Digital Marketing" style="width: 1.2rem; height: 1.2rem; accent-color: var(--logo-pink);">
+                    Digital Marketing
+                  </label>
+                </div>
+              </div>
+
+              <!-- Preferred Time -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label for="preferredDate" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Preferred Date</label>
+                  <input type="date" id="preferredDate" name="preferredDate" 
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                </div>
+                <div>
+                  <label for="preferredTime" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Preferred Time</label>
+                  <select id="preferredTime" name="preferredTime" 
+                          style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease; background: white;"
+                          onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'">
+                    <option value="">Select Time</option>
+                    <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                    <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                    <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-blue);">Tell us about your goals and challenges</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your current challenges, goals, and what you hope to achieve..."
+                         style="width: 100%; padding: 1rem; border: 2px solid rgba(168, 58, 254, 0.1); border-radius: 8px; font-size: 1rem; resize: vertical; font-family: inherit; transition: border-color 0.3s ease;"
+                         onfocus="this.style.borderColor='var(--logo-pink)'" onblur="this.style.borderColor='rgba(168, 58, 254, 0.1)'"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="cta-primary" style="justify-self: center; margin-top: 1rem; min-width: 250px;">
+                Book Free Consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What to Expect</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="about-intro" style="grid-template-columns: 1fr; text-align: center;">
+          <div class="about-text">
+            <p class="lead-text">
+              During your <strong>30-minute consultation</strong>, our experts will dive deep into your business needs, analyze your current challenges, and present tailored solutions. You'll leave with actionable insights and a clear roadmap for growth. No obligations, just value-packed advice from industry professionals who care about your success.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">30</div>
+              <div class="stat-label">Minutes Duration</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Free Consultation</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">24hrs</div>
+              <div class="stat-label">Response Time</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">Zero</div>
+              <div class="stat-label">Obligations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="footer-logo-placeholder">AU</div>
+            <strong>A.S. UNITED</strong>
+          </div>
+          <p>&copy; 2025 All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 Gawalior, Madhya Pradesh, India</p>
+          <p>📧 <a href="mailto:as.united62@gmail.com">as.united62@gmail.com</a></p>
+          <p>📞 <a href="tel:+919202618913">+91-9202618913</a></p>
+          <p>📞 <a href="tel:+917400685050">+91-7400685050</a></p>  
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="offers.html">Services</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/a-s-united/" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+             <a href="https://www.instagram.com/a.s.united_gwalior?igsh=MTZuYTN0NDYwOHBleQ%3D%3D" class="social-link" aria-label="Instagram">Instagram</a>
+             <a href="https://www.facebook.com/share/16rW3cenoy/?mibextid=wwXIfr" class="social-link" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.querySelector('.mobile-toggle');
+      const nav = document.querySelector('nav');
+      
+      if (mobileToggle) {
+        mobileToggle.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          mobileToggle.classList.toggle('active');
+        });
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            nav.classList.remove('active');
+            mobileToggle.classList.remove('active');
+          });
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!nav.contains(e.target) && !mobileToggle.contains(e.target)) {
+            nav.classList.remove('active');
+            mobileToggle.classList.remove('active');
+          }
+        });
+      }
+
+      // Animation observer
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.feature-card, .service-card, .stat-card').forEach(card => {
+        observer.observe(card);
+      });
+
+      // Set minimum date to today
+      const dateInput = document.getElementById('preferredDate');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+      }
+
+      // Form validation (enhanced for Netlify)
+      const form = document.getElementById('consultationForm');
+      form.addEventListener('submit', function(e) {
+        // Validate that at least one service is selected
+        const services = document.querySelectorAll('input[name="services"]:checked');
+        if (services.length === 0) {
+          e.preventDefault();
+          alert('Please select at least one service you\'re interested in.');
+          return false;
+        }
+        
+        // If validation passes, form will submit to Netlify
+        // No need to prevent default - let Netlify handle it
+      });
+    });
+
+    // Scroll to top functionality
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 300) {
+        if (!document.querySelector('.scroll-to-top')) {
+          const scrollButton = document.createElement('button');
+          scrollButton.className = 'scroll-to-top';
+          scrollButton.innerHTML = '↑';
+          scrollButton.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+          `;
+          
+          scrollButton.addEventListener('click', function() {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+          
+          document.body.appendChild(scrollButton);
+        }
+      } else {
+        const scrollButton = document.querySelector('.scroll-to-top');
+        if (scrollButton) {
+          scrollButton.remove();
+        }
+      }
+    });
+  </script>
+
+  <style>
+    /* Responsive adjustments for form */
+    @media (max-width: 767px) {
+      [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+      }
+      
+      [style*="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+    
+    /* Form input focus animations */
+    input:focus, select:focus, textarea:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(168, 58, 254, 0.2);
+    }
+  </style>
+</body>
+</html>
