@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://asunited.in/sitemap.xml
+
+# Block access to admin/backend files
+Disallow: /*-handler.php
+Disallow: /debug-*.php
+
+# Allow all images for better indexing
+Allow: /images/
+
+# Crawl delay (optional - can help with server load)
+Crawl-delay: 1
