@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://asunited.com/sitemap.xml
+Sitemap: https://asunited.in/sitemap.xml
 
 # Block access to admin/backend files
 Disallow: /*-handler.php
