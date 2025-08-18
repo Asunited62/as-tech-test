@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<p style='color: green;'><strong>✓ PHP mail() function available</strong></p>";
     
     // Email configuration
-    $to = "as.united62@gmail.com";
+    $to = "info@asunited.in";
     $emailSubject = "Debug Test: " . $subject;
     
     // Simple email body for testing

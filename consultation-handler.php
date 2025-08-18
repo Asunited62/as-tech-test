@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Email configuration
-    $to = "as.united62@gmail.com";
+    $to = "info@asunited.in";
     $subject = "New Consultation Request from " . $firstName . " " . $lastName;
     
     // Email body
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Log the error for debugging
         $errorMsg = "Mail send failed. Error: " . error_get_last()['message'] ?? 'Unknown error';
         error_log("Consultation form error: $errorMsg");
-        die("Sorry, there was an error sending your message. Please try again or contact us directly at as.united62@gmail.com");
+        die("Sorry, there was an error sending your message. Please try again or contact us directly at info@asunited.in");
     }
 } else {
     // If not POST request, redirect to consultation page
